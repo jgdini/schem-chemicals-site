@@ -14,7 +14,7 @@
   }
 
   /* ---- Scroll reveal ---- */
-  var revealEls = document.querySelectorAll(".reveal");
+  var revealEls = document.querySelectorAll(".reveal, .reveal-stagger");
   if (revealEls.length && "IntersectionObserver" in window && !reduceMotion) {
     var io = new IntersectionObserver(
       function (entries) {
