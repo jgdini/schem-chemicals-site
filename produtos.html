@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Linhas de Produtos — Schem</title>
+<meta name="description" content="Catálogo pesquisável com mais de 128 matérias-primas da Schem, filtrável por linha: Nutrição Animal, Nutrição Vegetal e Siderurgia &amp; Fundição.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&amp;family=Sora:wght@600;700;800&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Pular para o conteúdo</a>
+
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html">
+      <img src="assets/img/schem-icon.png" alt="Schem" class="brand__icon" width="42" height="42">
+      <span class="brand__name"><strong>Schem</strong><span>Group Chem Brasil</span></span>
+    </a>
+    <nav class="main-nav" aria-label="Navegação principal">
+      <ul class="main-nav__links">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="quem-somos.html">Quem Somos</a></li>
+        <li><a href="produtos.html" class="is-active">Linhas de Produtos</a></li>
+        <li><a href="siderurgia-e-fundicao.html">Siderurgia &amp; Fundição</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+      <div class="nav-lang"><a href="produtos.html" class="is-active">PT</a>
+      <a href="en/produtos.html">EN</a></div>
+    </nav>
+    <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-hero" data-field>
+    <div class="hero__field" aria-hidden="true"></div>
+    <div class="container page-hero__content">
+      <span class="breadcrumb"><a href="index.html">Início</a> / Linhas de Produtos</span>
+      <h1>Linhas de produtos.</h1>
+      <p>Matérias-primas para nutrição animal, nutrição vegetal e siderurgia &amp; fundição. Busque por nome ou filtre por linha pra encontrar o que precisa.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="catalog-toolbar reveal">
+        <div class="catalog-search">
+          <input type="text" placeholder="Buscar produto por nome…" data-catalog-search aria-label="Buscar produto">
+        </div>
+        <span class="catalog-count-wrap" style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--ink-500);"><span data-catalog-count>128</span> produtos encontrados</span>
+      </div>
+      <div class="catalog-filters reveal">
+        <button class="chip is-active" data-catalog-chip="all">Todos</button>
+        <button class="chip" data-catalog-chip="animal" id="animal">Nutrição Animal</button>
+        <button class="chip" data-catalog-chip="vegetal" id="vegetal">Nutrição Vegetal</button>
+        <button class="chip" data-catalog-chip="siderurgia" id="siderurgia">Siderurgia &amp; Fundição</button>
+      </div>
+      <div class="catalog-grid" data-catalog>
+          <div class="catalog-item" data-name="Carbonato de Cobalto" data-segment="animal">
+            <span>Carbonato de Cobalto</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Carbonato de Cobre" data-segment="animal">
+            <span>Carbonato de Cobre</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Sulfato de Cobalto Hepta" data-segment="animal">
+            <span>Sulfato de Cobalto Hepta</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Sulfato de Cobalto Mono" data-segment="animal">
+            <span>Sulfato de Cobalto Mono</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Selenito de Sódio" data-segment="animal">
+            <span>Selenito de Sódio</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Molibdato de Sódio" data-segment="vegetal">
+            <span>Molibdato de Sódio</span>
+            <span class="tag">Nutrição Vegetal</span>
+          </div>
+          <div class="catalog-item" data-name="Ácido Acético Glacial" data-segment="animal">
+            <span>Ácido Acético Glacial</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Ácido Ascórbico" data-segment="animal">
+            <span>Ácido Ascórbico</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Ácido Bórico" data-segment="vegetal">
+            <span>Ácido Bórico</span>
+            <span class="tag">Nutrição Vegetal</span>
+          </div>
+          <div class="catalog-item" data-name="Ácido Cítrico" data-segment="animal">
+            <span>Ácido Cítrico</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Ácido Crômico" data-segment="vegetal">
+            <span>Ácido Crômico</span>
+            <span class="tag">Nutrição Vegetal</span>
+          </div>
+          <div class="catalog-item" data-name="Ácido Fólico" data-segment="animal">
+            <span>Ácido Fólico</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Ácido Fórmico" data-segment="animal">
+            <span>Ácido Fórmico</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Ácido Fosfórico 85%" data-segment="vegetal">
+            <span>Ácido Fosfórico 85%</span>
+            <span class="tag">Nutrição Vegetal</span>
+          </div>
+          <div class="catalog-item" data-name="Ácido Fosforoso" data-segment="vegetal">
+            <span>Ácido Fosforoso</span>
+            <span class="tag">Nutrição Vegetal</span>
+          </div>
+          <div class="catalog-item" data-name="Ácido Fumárico" data-segment="animal">
+            <span>Ácido Fumárico</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Ácido Lático" data-segment="animal">
+            <span>Ácido Lático</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Ácido Láurico" data-segment="animal">
+            <span>Ácido Láurico</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Ácido Nicotínico" data-segment="animal">
+            <span>Ácido Nicotínico</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Ácido Pirofosfato de Sódio (SAPP)" data-segment="animal">
+            <span>Ácido Pirofosfato de Sódio (SAPP)</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Ácido Sórbico" data-segment="animal">
+            <span>Ácido Sórbico</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Amida 60" data-segment="animal">
+            <span>Amida 60</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Amida 90" data-segment="animal">
+            <span>Amida 90</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="ATMP 50%" data-segment="vegetal">
+            <span>ATMP 50%</span>
+            <span class="tag">Nutrição Vegetal</span>
+          </div>
+          <div class="catalog-item" data-name="Benzoato de Sódio" data-segment="animal">
+            <span>Benzoato de Sódio</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="BHA" data-segment="animal">
+            <span>BHA</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="BHT" data-segment="animal">
+            <span>BHT</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Bicarbonato de Sódio" data-segment="animal">
+            <span>Bicarbonato de Sódio</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Bórax" data-segment="vegetal">
+            <span>Bórax</span>
+            <span class="tag">Nutrição Vegetal</span>
+          </div>
+          <div class="catalog-item" data-name="Carbonato de Manganês" data-segment="vegetal">
+            <span>Carbonato de Manganês</span>
+            <span class="tag">Nutrição Vegetal</span>
+          </div>
+          <div class="catalog-item" data-name="Carbonato de Níquel" data-segment="vegetal">
+            <span>Carbonato de Níquel</span>
+            <span class="tag">Nutrição Vegetal</span>
+          </div>
+          <div class="catalog-item" data-name="Carbonato de Potássio" data-segment="vegetal">
+            <span>Carbonato de Potássio</span>
+            <span class="tag">Nutrição Vegetal</span>
+          </div>
+          <div class="catalog-item" data-name="Carbonato de Zinco" data-segment="vegetal">
+            <span>Carbonato de Zinco</span>
+            <span class="tag">Nutrição Vegetal</span>
+          </div>
+          <div class="catalog-item" data-name="Citrato de Potássio" data-segment="animal">
+            <span>Citrato de Potássio</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Citrato de Sódio" data-segment="animal">
+            <span>Citrato de Sódio</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Cloreto de Amônio" data-segment="animal">
+            <span>Cloreto de Amônio</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Cloreto de Cálcio" data-segment="vegetal">
+            <span>Cloreto de Cálcio</span>
+            <span class="tag">Nutrição Vegetal</span>
+          </div>
+          <div class="catalog-item" data-name="Cloreto de Cobre" data-segment="animal">
+            <span>Cloreto de Cobre</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Cloreto de Colina 60%" data-segment="animal">
+            <span>Cloreto de Colina 60%</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Cloreto de Magnésio" data-segment="vegetal">
+            <span>Cloreto de Magnésio</span>
+            <span class="tag">Nutrição Vegetal</span>
+          </div>
+          <div class="catalog-item" data-name="Cloreto de Manganês" data-segment="animal">
+            <span>Cloreto de Manganês</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Cloreto de Níquel" data-segment="animal">
+            <span>Cloreto de Níquel</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Cloreto de Potássio" data-segment="vegetal">
+            <span>Cloreto de Potássio</span>
+            <span class="tag">Nutrição Vegetal</span>
+          </div>
+          <div class="catalog-item" data-name="Cloreto de Zinco Anidro" data-segment="animal">
+            <span>Cloreto de Zinco Anidro</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Cocoamidopropilbetaína" data-segment="animal">
+            <span>Cocoamidopropilbetaína</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Creatina Monohidratada" data-segment="animal">
+            <span>Creatina Monohidratada</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Dextrose" data-segment="animal">
+            <span>Dextrose</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Dióxido de Titânio Anatase" data-segment="animal">
+            <span>Dióxido de Titânio Anatase</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="DL-Metionina" data-segment="animal">
+            <span>DL-Metionina</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="EDDI (Dihidroiodeto de Etilenodiamina)" data-segment="animal">
+            <span>EDDI (Dihidroiodeto de Etilenodiamina)</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="EDTA Dissódico" data-segment="vegetal">
+            <span>EDTA Dissódico</span>
+            <span class="tag">Nutrição Vegetal</span>
+          </div>
+          <div class="catalog-item" data-name="EDTA Tetrassódico" data-segment="vegetal">
+            <span>EDTA Tetrassódico</span>
+            <span class="tag">Nutrição Vegetal</span>
+          </div>
+          <div class="catalog-item" data-name="Ferrocianeto de Sódio" data-segment="animal">
+            <span>Ferrocianeto de Sódio</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Fosfato Dissódico (DSP)" data-segment="animal">
+            <span>Fosfato Dissódico (DSP)</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Fosfato Monocálcico (MCP)" data-segment="animal">
+            <span>Fosfato Monocálcico (MCP)</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Fosfato Monossódico (MSP)" data-segment="animal">
+            <span>Fosfato Monossódico (MSP)</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Fosfato Tricálcico (TCP)" data-segment="animal">
+            <span>Fosfato Tricálcico (TCP)</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Fosfato Trissódico (TSP)" data-segment="animal">
+            <span>Fosfato Trissódico (TSP)</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Glicerina" data-segment="animal">
+            <span>Glicerina</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Glicina" data-segment="animal">
+            <span>Glicina</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Glutamato Monossódico" data-segment="animal">
+            <span>Glutamato Monossódico</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Glúten de Trigo" data-segment="animal">
+            <span>Glúten de Trigo</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Goma Guar" data-segment="animal">
+            <span>Goma Guar</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Goma Xantana" data-segment="animal">
+            <span>Goma Xantana</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="HEDP 60%" data-segment="vegetal">
+            <span>HEDP 60%</span>
+            <span class="tag">Nutrição Vegetal</span>
+          </div>
+          <div class="catalog-item" data-name="Heptamolibdato de Amônio" data-segment="vegetal">
+            <span>Heptamolibdato de Amônio</span>
+            <span class="tag">Nutrição Vegetal</span>
+          </div>
+          <div class="catalog-item" data-name="Hexametafosfato de Sódio (SHMP)" data-segment="animal">
+            <span>Hexametafosfato de Sódio (SHMP)</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Iodato de Cálcio" data-segment="animal">
+            <span>Iodato de Cálcio</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Iodato de Potássio" data-segment="animal">
+            <span>Iodato de Potássio</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Iodeto de Potássio" data-segment="animal">
+            <span>Iodeto de Potássio</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="L-Arginina" data-segment="animal">
+            <span>L-Arginina</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Lauril Éter Sulfato" data-segment="animal">
+            <span>Lauril Éter Sulfato</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="L-Carnitina" data-segment="animal">
+            <span>L-Carnitina</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="L-Cisteína HCL" data-segment="animal">
+            <span>L-Cisteína HCL</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="L-Glutamina" data-segment="animal">
+            <span>L-Glutamina</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="L-Isoleucina" data-segment="animal">
+            <span>L-Isoleucina</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="L-Leucina" data-segment="animal">
+            <span>L-Leucina</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="L-Lisina" data-segment="animal">
+            <span>L-Lisina</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="L-Treonina" data-segment="animal">
+            <span>L-Treonina</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="L-Triptofano" data-segment="animal">
+            <span>L-Triptofano</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="L-Valina" data-segment="animal">
+            <span>L-Valina</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Metabissulfito de Potássio" data-segment="animal">
+            <span>Metabissulfito de Potássio</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Metabissulfito de Sódio" data-segment="animal">
+            <span>Metabissulfito de Sódio</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Metil Parabeno" data-segment="animal">
+            <span>Metil Parabeno</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="MKP" data-segment="animal">
+            <span>MKP</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Molibdato de Amônio" data-segment="vegetal">
+            <span>Molibdato de Amônio</span>
+            <span class="tag">Nutrição Vegetal</span>
+          </div>
+          <div class="catalog-item" data-name="Monoetanolamina" data-segment="animal">
+            <span>Monoetanolamina</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Monóxido de Manganês" data-segment="vegetal">
+            <span>Monóxido de Manganês</span>
+            <span class="tag">Nutrição Vegetal</span>
+          </div>
+          <div class="catalog-item" data-name="Nitrato de Cálcio" data-segment="vegetal">
+            <span>Nitrato de Cálcio</span>
+            <span class="tag">Nutrição Vegetal</span>
+          </div>
+          <div class="catalog-item" data-name="Nitrato de Cobre" data-segment="vegetal">
+            <span>Nitrato de Cobre</span>
+            <span class="tag">Nutrição Vegetal</span>
+          </div>
+          <div class="catalog-item" data-name="Nitrato de Magnésio" data-segment="vegetal">
+            <span>Nitrato de Magnésio</span>
+            <span class="tag">Nutrição Vegetal</span>
+          </div>
+          <div class="catalog-item" data-name="Nitrato de Potássio" data-segment="vegetal">
+            <span>Nitrato de Potássio</span>
+            <span class="tag">Nutrição Vegetal</span>
+          </div>
+          <div class="catalog-item" data-name="Nitrato de Zinco" data-segment="vegetal">
+            <span>Nitrato de Zinco</span>
+            <span class="tag">Nutrição Vegetal</span>
+          </div>
+          <div class="catalog-item" data-name="Nonilfenol 9,5" data-segment="animal">
+            <span>Nonilfenol 9,5</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Octaborato de Sódio" data-segment="vegetal">
+            <span>Octaborato de Sódio</span>
+            <span class="tag">Nutrição Vegetal</span>
+          </div>
+          <div class="catalog-item" data-name="Óleo Mineral" data-segment="animal">
+            <span>Óleo Mineral</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Óxido de Cobalto" data-segment="animal">
+            <span>Óxido de Cobalto</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Óxido de Zinco" data-segment="animal">
+            <span>Óxido de Zinco</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Polissorbato" data-segment="animal">
+            <span>Polissorbato</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Potassa Cáustica Escamas" data-segment="vegetal">
+            <span>Potassa Cáustica Escamas</span>
+            <span class="tag">Nutrição Vegetal</span>
+          </div>
+          <div class="catalog-item" data-name="Propileno Glicol USP" data-segment="animal">
+            <span>Propileno Glicol USP</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Propilparabeno" data-segment="animal">
+            <span>Propilparabeno</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Propionato de Cálcio" data-segment="animal">
+            <span>Propionato de Cálcio</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Sacarina Sódica" data-segment="animal">
+            <span>Sacarina Sódica</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Silicone" data-segment="animal">
+            <span>Silicone</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Soda Cáustica" data-segment="vegetal">
+            <span>Soda Cáustica</span>
+            <span class="tag">Nutrição Vegetal</span>
+          </div>
+          <div class="catalog-item" data-name="Sorbato de Potássio" data-segment="animal">
+            <span>Sorbato de Potássio</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Sorbitol 70%" data-segment="animal">
+            <span>Sorbitol 70%</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Sulfato de Cobre" data-segment="vegetal">
+            <span>Sulfato de Cobre</span>
+            <span class="tag">Nutrição Vegetal</span>
+          </div>
+          <div class="catalog-item" data-name="Sulfato de Ferro" data-segment="animal">
+            <span>Sulfato de Ferro</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Sulfato de Manganês Mono" data-segment="vegetal">
+            <span>Sulfato de Manganês Mono</span>
+            <span class="tag">Nutrição Vegetal</span>
+          </div>
+          <div class="catalog-item" data-name="Sulfato de Níquel" data-segment="animal">
+            <span>Sulfato de Níquel</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Sulfato de Zinco Hepta/Mono" data-segment="vegetal">
+            <span>Sulfato de Zinco Hepta/Mono</span>
+            <span class="tag">Nutrição Vegetal</span>
+          </div>
+          <div class="catalog-item" data-name="Taurina" data-segment="animal">
+            <span>Taurina</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Tetrapirofosfato de Potássio (TKPP)" data-segment="animal">
+            <span>Tetrapirofosfato de Potássio (TKPP)</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Tetrapirofosfato de Sódio (TSPP)" data-segment="animal">
+            <span>Tetrapirofosfato de Sódio (TSPP)</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Trietanolamina" data-segment="animal">
+            <span>Trietanolamina</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Trióxido de Molibdênio" data-segment="vegetal">
+            <span>Trióxido de Molibdênio</span>
+            <span class="tag">Nutrição Vegetal</span>
+          </div>
+          <div class="catalog-item" data-name="Tripolifosfato de Sódio (STPP)" data-segment="animal">
+            <span>Tripolifosfato de Sódio (STPP)</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Ureia Técnica" data-segment="vegetal">
+            <span>Ureia Técnica</span>
+            <span class="tag">Nutrição Vegetal</span>
+          </div>
+          <div class="catalog-item" data-name="Vanilina" data-segment="animal">
+            <span>Vanilina</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Vitamina C 35% Monofosfatada" data-segment="animal">
+            <span>Vitamina C 35% Monofosfatada</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Xilose" data-segment="animal">
+            <span>Xilose</span>
+            <span class="tag">Nutrição Animal</span>
+          </div>
+          <div class="catalog-item" data-name="Ferro Molibdênio" data-segment="siderurgia">
+            <span>Ferro Molibdênio</span>
+            <span class="tag">Siderurgia & Fundição</span>
+          </div>
+          <div class="catalog-item" data-name="Ferro Tungstênio" data-segment="siderurgia">
+            <span>Ferro Tungstênio</span>
+            <span class="tag">Siderurgia & Fundição</span>
+          </div>
+          <div class="catalog-item" data-name="Cromo Metálico" data-segment="siderurgia">
+            <span>Cromo Metálico</span>
+            <span class="tag">Siderurgia & Fundição</span>
+          </div>
+          <div class="catalog-item" data-name="Manganês Eletrolítico" data-segment="siderurgia">
+            <span>Manganês Eletrolítico</span>
+            <span class="tag">Siderurgia & Fundição</span>
+          </div>
+          <div class="catalog-item" data-name="Níquel Metálico Catodos" data-segment="siderurgia">
+            <span>Níquel Metálico Catodos</span>
+            <span class="tag">Siderurgia & Fundição</span>
+          </div>
+      </div>
+      <div class="catalog-empty" data-catalog-empty>
+        <p>Nenhum produto encontrado com esse termo. Fale com nosso time comercial — talvez esteja no catálogo estendido.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tint">
+    <div class="container">
+      <div class="cta-band reveal">
+        <div>
+          <h2>Não achou o que precisava?</h2>
+          <p>Nossa equipe consulta o catálogo estendido e retorna com rapidez.</p>
+        </div>
+        <div class="hero__actions" style="margin-top: 0;">
+          <a class="btn btn--earth" href="contato.html">Fale com o time comercial</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html" style="margin-bottom: 1rem;">
+          <img src="assets/img/schem-icon.png" alt="Schem" class="brand__icon" width="36" height="36" style="filter: brightness(0) invert(1);">
+        </a>
+        <p style="max-width: 32ch; font-size: 0.88rem;">Distribuição de matérias-primas para nutrição animal, vegetal e siderurgia desde 2015.</p>
+      </div>
+      <div>
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="quem-somos.html">Quem Somos</a></li>
+          <li><a href="produtos.html">Linhas de Produtos</a></li>
+          <li><a href="siderurgia-e-fundicao.html">Siderurgia &amp; Fundição</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Unidades</h4>
+        <ul>
+          <li>Matriz — São Paulo / SP</li>
+          <li>Filial — Curitiba / PR</li>
+          <li>Filial — Itajaí / SC</li>
+          <li>Representante — Salvador / BA</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="tel:+551135400400">Tel: +55 11 3540-0400</a></li>
+          <li><a href="mailto:vendas@groupchembrasil.com.br">vendas@groupchembrasil.com.br</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>Schem das Américas © 2021–2026. Todos os direitos reservados.</span>
+      <span>Produção: EstúdioTAN | Áttema Comunicação</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
