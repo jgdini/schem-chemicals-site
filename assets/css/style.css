@@ -210,7 +210,7 @@ button { font-family: inherit; }
   .nav-toggle { display: block; }
 }
 
-/* ---- Hero (aerial field photo, slow drone-zoom loop) ---- */
+/* ---- Hero (aerial field photo, drone-zoom loop) ---- */
 .hero {
   position: relative;
   overflow: hidden;
@@ -221,12 +221,12 @@ button { font-family: inherit; }
   position: absolute; inset: 0;
   background: url("../img/hero-field.jpg") no-repeat center 52%;
   background-size: cover;
-  animation: heroZoom 22s ease-in-out infinite alternate;
+  animation: heroZoom 9s ease-in-out infinite alternate;
   will-change: transform;
 }
 @keyframes heroZoom {
   from { transform: scale(1); }
-  to { transform: scale(1.12); }
+  to { transform: scale(1.16); }
 }
 .hero__field {
   position: absolute; inset: 0;
