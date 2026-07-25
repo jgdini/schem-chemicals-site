@@ -21,7 +21,7 @@
 <meta name="twitter:image" content="https://jgdini.github.io/schem-chemicals-site/assets/img/schem-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&amp;family=Sora:wght@600;700;800&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&amp;family=Geist+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -50,16 +50,29 @@
 
 <main id="main">
 
-  <section class="hero">
-    <div class="hero__bg" aria-hidden="true"></div>
-    <div class="hero__field" aria-hidden="true"></div>
-    <div class="container hero__content">
-      <span class="eyebrow hero__kicker">Distribuição de matérias-primas desde 2015</span>
-      <h1>Nosso compromisso é com o seu negócio.</h1>
-      <p>Da nutrição animal e vegetal à siderurgia e fundição, levamos matérias-primas de alta qualidade a mais de 4 mil clientes no Brasil e no exterior.</p>
+  <section class="hero-expand" data-hero-expand>
+    <div class="hero-expand__bg" aria-hidden="true"></div>
+    <div class="hero-expand__stage">
+      <div class="hero-expand__media" data-hero-media>
+        <video class="hero-expand__video" src="assets/video/hero-tractor.mp4" poster="assets/img/hero-tractor-poster.jpg" autoplay muted loop playsinline preload="auto" disablepictureinpicture disableremoteplayback></video>
+        <div class="hero-expand__media-scrim" aria-hidden="true"></div>
+      </div>
+      <h1 class="hero-expand__title">
+        <span class="hero-expand__word hero-expand__word--left">Nosso compromisso</span>
+        <span class="hero-expand__word hero-expand__word--right">é com o seu negócio.</span>
+      </h1>
+      <span class="hero-expand__hint" aria-hidden="true">Role para expandir</span>
+    </div>
+  </section>
+
+  <section class="section hero-expand__content" data-hero-expand-content>
+    <noscript><style>.hero-expand__content{opacity:1;}</style></noscript>
+    <div class="container" style="max-width: 46rem;">
+      <span class="eyebrow">Distribuição de matérias-primas desde 2015</span>
+      <p style="color: var(--ink-500); margin-top: var(--sp-2); font-size: 1.1rem; max-width: 46ch;">Da nutrição animal e vegetal à siderurgia e fundição, levamos matérias-primas de alta qualidade a mais de 4 mil clientes no Brasil e no exterior.</p>
       <div class="hero__actions">
         <a class="btn btn--green" href="produtos.html">Ver linhas de produtos</a>
-        <a class="btn btn--ghost-dark" href="contato.html">Fale com um especialista</a>
+        <a class="btn btn--ghost" href="contato.html">Fale com um especialista</a>
       </div>
     </div>
   </section>
@@ -179,5 +192,6 @@
 </footer>
 
 <script src="assets/js/main.js"></script>
+<script src="assets/js/hero-expand.js"></script>
 </body>
 </html>

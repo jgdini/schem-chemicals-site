@@ -21,7 +21,7 @@
 <meta name="twitter:image" content="https://jgdini.github.io/schem-chemicals-site/assets/img/schem-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&amp;family=Sora:wght@600;700;800&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&amp;family=Geist+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
@@ -50,16 +50,29 @@
 
 <main id="main">
 
-  <section class="hero">
-    <div class="hero__bg" aria-hidden="true"></div>
-    <div class="hero__field" aria-hidden="true"></div>
-    <div class="container hero__content">
-      <span class="eyebrow hero__kicker">Raw material distribution since 2015</span>
-      <h1>Our commitment is to your business.</h1>
-      <p>From animal and plant nutrition to steel &amp; foundry, we bring high-quality raw materials to more than 4,000 clients in Brazil and abroad.</p>
+  <section class="hero-expand" data-hero-expand>
+    <div class="hero-expand__bg" aria-hidden="true"></div>
+    <div class="hero-expand__stage">
+      <div class="hero-expand__media" data-hero-media>
+        <video class="hero-expand__video" src="../assets/video/hero-tractor.mp4" poster="../assets/img/hero-tractor-poster.jpg" autoplay muted loop playsinline preload="auto" disablepictureinpicture disableremoteplayback></video>
+        <div class="hero-expand__media-scrim" aria-hidden="true"></div>
+      </div>
+      <h1 class="hero-expand__title">
+        <span class="hero-expand__word hero-expand__word--left">Our commitment</span>
+        <span class="hero-expand__word hero-expand__word--right">is to your business.</span>
+      </h1>
+      <span class="hero-expand__hint" aria-hidden="true">Scroll to expand</span>
+    </div>
+  </section>
+
+  <section class="section hero-expand__content" data-hero-expand-content>
+    <noscript><style>.hero-expand__content{opacity:1;}</style></noscript>
+    <div class="container" style="max-width: 46rem;">
+      <span class="eyebrow">Raw material distribution since 2015</span>
+      <p style="color: var(--ink-500); margin-top: var(--sp-2); font-size: 1.1rem; max-width: 46ch;">From animal and plant nutrition to steel &amp; foundry, we bring high-quality raw materials to more than 4,000 clients in Brazil and abroad.</p>
       <div class="hero__actions">
         <a class="btn btn--green" href="produtos.html">View product lines</a>
-        <a class="btn btn--ghost-dark" href="contato.html">Talk to a specialist</a>
+        <a class="btn btn--ghost" href="contato.html">Talk to a specialist</a>
       </div>
     </div>
   </section>
@@ -179,5 +192,6 @@
 </footer>
 
 <script src="../assets/js/main.js"></script>
+<script src="../assets/js/hero-expand.js"></script>
 </body>
 </html>
