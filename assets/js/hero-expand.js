@@ -7,7 +7,6 @@
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var media = section.querySelector("[data-hero-media]");
   var bg = section.querySelector(".hero-expand__bg");
-  var words = section.querySelectorAll(".hero-expand__word");
   var content = document.querySelector("[data-hero-expand-content]");
 
   window.scrollTo(0, 0);
@@ -30,10 +29,6 @@
     var maxW = isMobile() ? window.innerWidth * 0.94 : 1400;
     var w = minW + progress * (maxW - minW);
     media.style.width = w + "px";
-
-    var shift = progress * (isMobile() ? 40 : 70);
-    if (words[0]) words[0].style.transform = "translateX(-" + shift + "px)";
-    if (words[1]) words[1].style.transform = "translateX(" + shift + "px)";
 
     if (bg) bg.style.opacity = String(1 - progress);
     if (content) content.classList.toggle("is-visible", progress >= 0.98);

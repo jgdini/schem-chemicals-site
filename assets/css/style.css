@@ -293,12 +293,12 @@ button { font-family: inherit; }
 .hero-expand__media-scrim { position: absolute; inset: 0; background: rgba(8, 24, 13, 0.25); pointer-events: none; }
 .hero-expand__title {
   position: relative; z-index: 1;
-  display: flex; flex-wrap: wrap; gap: 0.32em; justify-content: center;
+  max-width: 22ch;
   color: #fff; text-align: center;
   font-size: var(--fs-h1); font-family: var(--font-display); font-weight: 700; letter-spacing: -0.02em;
+  line-height: 1.15;
   margin: 0;
 }
-.hero-expand__word { display: inline-block; }
 .hero-expand__hint {
   position: absolute; bottom: var(--sp-4); left: 50%; transform: translateX(-50%);
   display: flex; flex-direction: column; align-items: center; gap: 0.5em;
@@ -323,7 +323,6 @@ button { font-family: inherit; }
   .hero-expand__title { font-size: clamp(1.7rem, 7.5vw, 2.5rem); }
 }
 @media (prefers-reduced-motion: reduce) {
-  .hero-expand__word { transform: none !important; }
   .hero-expand__hint { display: none; }
 }
 
