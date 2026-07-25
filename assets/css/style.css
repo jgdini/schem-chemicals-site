@@ -210,13 +210,23 @@ button { font-family: inherit; }
   .nav-toggle { display: block; }
 }
 
-/* ---- Hero (field photo + falling fertilizer signature) ---- */
+/* ---- Hero (aerial field photo, slow drone-zoom loop) ---- */
 .hero {
   position: relative;
   overflow: hidden;
-  background: #1a2f1c url("../img/hero-field.jpg") no-repeat center 52%;
-  background-size: cover;
+  background: #1a2f1c;
   padding: var(--sp-6) 0 var(--sp-5);
+}
+.hero__bg {
+  position: absolute; inset: 0;
+  background: url("../img/hero-field.jpg") no-repeat center 52%;
+  background-size: cover;
+  animation: heroZoom 22s ease-in-out infinite alternate;
+  will-change: transform;
+}
+@keyframes heroZoom {
+  from { transform: scale(1); }
+  to { transform: scale(1.12); }
 }
 .hero__field {
   position: absolute; inset: 0;
@@ -225,7 +235,6 @@ button { font-family: inherit; }
     linear-gradient(180deg, rgba(8, 24, 13, 0.25) 0%, rgba(8, 24, 13, 0) 30%, rgba(8, 24, 13, 0.35) 100%);
   pointer-events: none;
 }
-.field-canvas { position: absolute; inset: 0; pointer-events: none; }
 .hero__content { position: relative; max-width: 46rem; }
 .hero__content h1 { color: #fff; }
 .hero__content p { font-size: 1.1rem; color: rgba(255, 255, 255, 0.82); margin-top: var(--sp-2); max-width: 42ch; }
@@ -235,8 +244,7 @@ button { font-family: inherit; }
 
 .page-hero {
   position: relative; overflow: hidden;
-  background: #1a2f1c url("../img/hero-field.jpg") no-repeat center 52%;
-  background-size: cover;
+  background: #1a2f1c;
   padding: calc(var(--sp-6) - 1.5rem) 0 var(--sp-5);
 }
 .page-hero__content { position: relative; max-width: 44rem; }
