@@ -283,6 +283,7 @@ button { font-family: inherit; }
   width: 320px;
   aspect-ratio: 16 / 9;
   max-width: 94vw;
+  max-height: 52vh;
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: 0 30px 90px rgba(0, 0, 0, 0.45);
