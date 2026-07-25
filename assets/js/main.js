@@ -72,12 +72,12 @@
     }
   }
 
-  /* ---- Field canvas (hero signature: drifting seed/leaf particles) ---- */
+  /* ---- Field canvas (hero signature: falling fertilizer granules) ---- */
   var FIELD_PALETTE = [
-    "rgba(23, 138, 63, 0.30)",
-    "rgba(111, 181, 66, 0.32)",
-    "rgba(200, 134, 47, 0.20)",
-    "rgba(47, 163, 80, 0.24)"
+    "rgba(255, 255, 255, 0.85)",
+    "rgba(247, 234, 214, 0.8)",
+    "rgba(230, 242, 227, 0.75)",
+    "rgba(200, 134, 47, 0.55)"
   ];
 
   function initField(host, isStatic) {
@@ -97,29 +97,29 @@
     var mouse = { x: -9999, y: -9999, active: false };
     var rafId = null;
 
-    function spawn(fromBottom) {
-      var r = 3 + Math.random() * 5;
+    function spawn(fromTop) {
+      var r = 1.4 + Math.random() * 2.4;
       return {
         x: Math.random() * w,
-        y: fromBottom ? h + r : Math.random() * h,
+        y: fromTop ? -r - Math.random() * 40 : Math.random() * h,
         r: r,
-        drift: (Math.random() - 0.5) * 0.22,
-        speed: 0.12 + Math.random() * 0.26,
+        drift: (Math.random() - 0.5) * 0.16,
+        speed: 0.35 + Math.random() * 0.65,
         wobble: Math.random() * Math.PI * 2,
-        wobbleSpeed: 0.006 + Math.random() * 0.012,
+        wobbleSpeed: 0.01 + Math.random() * 0.02,
         color: FIELD_PALETTE[(Math.random() * FIELD_PALETTE.length) | 0]
       };
     }
 
     function seed() {
-      var count = Math.max(16, Math.round((w * h) / 26000));
+      var count = Math.max(20, Math.round((w * h) / 15000));
       seeds = [];
       for (var i = 0; i < count; i++) seeds.push(spawn(false));
     }
 
     function drawSeed(s) {
       ctx.beginPath();
-      ctx.ellipse(s.x, s.y, s.r, s.r * 1.7, s.wobble, 0, Math.PI * 2);
+      ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
       ctx.fillStyle = s.color;
       ctx.fill();
     }
@@ -183,8 +183,8 @@
       for (var i = 0; i < seeds.length; i++) {
         var s = seeds[i];
         s.wobble += s.wobbleSpeed;
-        s.y -= s.speed;
-        s.x += s.drift + Math.sin(s.wobble) * 0.12;
+        s.y += s.speed;
+        s.x += s.drift + Math.sin(s.wobble) * 0.18;
         if (mouse.active) {
           var dx = s.x - mouse.x, dy = s.y - mouse.y;
           var dist = Math.sqrt(dx * dx + dy * dy);
@@ -194,7 +194,7 @@
             s.y += (dy / dist) * push;
           }
         }
-        if (s.y + s.r < -10) {
+        if (s.y - s.r > h + 10) {
           seeds[i] = spawn(true);
         }
       }
